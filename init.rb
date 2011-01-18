@@ -1,10 +1,11 @@
 require 'redmine'
 
 Redmine::Plugin.register :redmine_wiki_comment_macro do
-  name 'Redmine Wiki Comment Macro plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
-  version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  name 'Wiki Comment Macro'
+  author 'Eric Davis'
+  url 'https://projects.littlestreamsoftware.com/projects/redmine-misc'
+  author_url 'http://www.littlestreamsoftware.com'
+  description 'Adds a wiki macro for HTML comments'
+  version '0.1.0'
+
 end
