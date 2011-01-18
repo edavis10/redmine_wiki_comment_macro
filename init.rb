@@ -8,4 +8,16 @@ Redmine::Plugin.register :redmine_wiki_comment_macro do
   description 'Adds a wiki macro for HTML comments'
   version '0.1.0'
 
+  Redmine::WikiFormatting::Macros.register do
+    desc "Adds an HTML comment. Examples:\n\n" +
+      "  !{{html_comment(We should add a video here)}}\n\n" +
+      "  <!-- We should add a video here -->"
+    macro :html_comment do |obj, args|
+      comment = args[0] || ''
+
+      return "<!-- #{h(comment)} -->"
+    end
+  end
+  
+    
 end
